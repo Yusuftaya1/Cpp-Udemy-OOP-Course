@@ -1,0 +1,87 @@
+# BOOK CLASS GELİŞTİRME TODO LİSTESİ
+
+## ÖNEMLİ NOT
+⚠️ Şu anda constructor hem header'da (inline) hem de .cpp'de tanımlı; bu çakışmaya yol açar. Birini kaldırın.
+
+---
+
+## 1. CONSTRUCTOR İYİLEŞTİRMELERİ
+- [ ] Default constructor ekle (parametresiz)
+- [ ] Constructor'da validation ekle
+  - [ ] Sayfa sayısı negatif olamaz kontrolü
+  - [ ] Başlık boş olamaz kontrolü
+  - [ ] Yazar boş olamaz kontrolü
+- [ ] Constructor overloading (farklı parametre kombinasyonları)
+
+---
+
+## 2. OPERATOR OVERLOADING
+- [ ] `==` operatörü (iki kitabı karşılaştırma)
+- [ ] `!=` operatörü (iki kitabı karşılaştırma)
+- [ ] `<<` operatörü (cout ile direkt yazdırma: `cout << myBook`)
+- [ ] `<` operatörü (sayfa sayısına göre sıralama)
+- [ ] `>` operatörü (sayfa sayısına göre sıralama)
+
+---
+
+## 3. EK ÖZELLİKLER
+- [ ] ISBN numarası (string) ekle
+- [ ] Yayın yılı (int) ekle
+- [ ] Okundu mu? (bool) ekle
+- [ ] Puan/Rating (double veya int, 1-10 arası) ekle
+- [ ] Fiyat (double) ekle
+
+---
+
+## 4. UTILITY FONKSİYONLAR
+- [ ] `display()` veya `print()` fonksiyonu (tüm bilgileri yazdırma)
+- [ ] `toString()` fonksiyonu (string formatında döndürme)
+- [ ] `isLong()` fonksiyonu (örn. 500+ sayfa ise true)
+- [ ] `getReadingTime()` fonksiyonu (sayfa sayısına göre tahmini okuma süresi)
+
+---
+
+## 5. SETTER VALİDASYONLARI
+- [ ] `setPages()`: negatif değer kontrolü ekle
+- [ ] `setTitle()`: boş string kontrolü ekle
+- [ ] `setAuthor()`: boş string kontrolü ekle
+
+---
+
+## 6. DESTRUCTOR
+- [ ] Destructor ekle (gerekirse dinamik bellek temizliği için)
+
+---
+
+## 7. COPY CONSTRUCTOR & ASSIGNMENT OPERATOR
+- [ ] Copy constructor ekle
+- [ ] Assignment operator (`=`) ekle
+- [ ] Derin kopyalama gerekiyorsa implement et
+
+---
+
+## 8. STATIC ÜYELER
+- [ ] Toplam kitap sayısını tutan static counter ekle
+- [ ] `getTotalBooks()` static fonksiyonu ekle
+
+---
+
+## 9. CONST CORRECTNESS
+- [ ] Const referans parametreler kullan (`const string&` yerine `string`)
+- [ ] Tüm getter fonksiyonlarını const yap (zaten var, kontrol et)
+
+---
+
+## 10. MAIN.CPP GELİŞTİRMELERİ
+- [ ] Birden fazla kitap oluşturma örneği ekle
+- [ ] Array/vector ile kitap koleksiyonu örneği ekle
+- [ ] Karşılaştırma örnekleri ekle
+- [ ] Sıralama örnekleri ekle
+
+---
+
+## İLERLEME DURUMU
+- Toplam Görev: 30+
+- Tamamlanan: 0
+- Devam Eden: 0
+- Bekleyen: 30+
